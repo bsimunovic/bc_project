@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(247, 247, 247, 0.5);
+}
+
+.nav {
+  height: 50px;
+  background-color: #333;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.nav li {
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.nav li a:hover {
+  color: #ebebeb;
+}
+
+.banner {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  background-color: rgba(247, 247, 247, 0.5);
+  text-align: center;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+.banner h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.banner h2 {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0 10%;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.section {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.container label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.container input[type="email"],
+.container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container button[type="submit"] {
+  background-color: #8c8c8c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 36px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.container button[type="submit"]:hover {
+  background-color: #666666;
+}
+
+.container .signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.container .signup-link a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.container .signup-link a:hover {
+  color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 14px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
